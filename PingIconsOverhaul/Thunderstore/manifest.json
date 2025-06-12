@@ -1,0 +1,9 @@
+﻿{
+	"name": "PingIconsOverhaul",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/NotAJunkie2/ror2_ping_icons_overhaul",
+	"description": "A Risk of Rain 2 mod that replaces the default ping icons with custom ones, making them more visually appealing and easier to understand.",
+	"dependencies": [
+		"bbepis-BepInExPack-5.4.2108"
+	]
+}

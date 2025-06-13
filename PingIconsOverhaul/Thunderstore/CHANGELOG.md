@@ -1,3 +1,8 @@
+## 1.0.2
+
+- README updated for Thunderstore, hopefully for sure
+- Moved icon initialization to ``Start`` method
+
 ## 1.0.1
 
 - Bumped up to 1.0.1 because I messed up the manifest when uploading it to Thunderstore 💀

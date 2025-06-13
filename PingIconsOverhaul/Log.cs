@@ -1,6 +1,6 @@
 ﻿using BepInEx.Logging;
 
-namespace RoR2_PingIconsOverhaul
+namespace PingIconsOverhaul
 {
     internal static class Log
     {

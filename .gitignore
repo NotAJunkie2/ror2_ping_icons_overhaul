@@ -338,3 +338,5 @@ bin/*
 obj/*
 # Other
 ignore/*
+/PingIconsOverhaul/Thunderstore/plugins/*
+*.zip

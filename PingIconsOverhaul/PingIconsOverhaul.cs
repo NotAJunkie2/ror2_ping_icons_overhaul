@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace RoR2_PingIconsOverhaul
+namespace PingIconsOverhaul
 {
     struct TexData
     {
@@ -22,73 +22,74 @@ namespace RoR2_PingIconsOverhaul
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "NotAJunkie";
         public const string PluginName = "PingIconsOverhaul";
-        public const string PluginVersion = "1.0.0";
+        public const string PluginVersion = "0.4.1";
         private const string bundleName = "pingiconsoverhaul";
         // Class variables
         private static AssetBundle bundle;
-        private static readonly Dictionary<string, TexData> INTERACTABLES = new()
+        private static readonly Dictionary<string, TexData> INTERACTABLES = new Dictionary<string, TexData>
         {
             // 3D Printers
-            { "CleansingPool", new TexData { addressable = "RoR2/Base/ShrineCleanse/ShrineCleanse.prefab", texName = "texCleansingPoolIcon"} },
-            { "CleansingPoolSandy", new TexData { addressable = "RoR2/Base/ShrineCleanse/ShrineCleanseSandy Variant.prefab", texName = "texCleansingPoolIcon"} },
-            { "CleansingPoolSnowy", new TexData { addressable = "RoR2/Base/ShrineCleanse/ShrineCleanseSnowy Variant.prefab", texName = "texCleansingPoolIcon"} },
-            { "3DPrinter", new TexData { addressable = "RoR2/Base/Duplicator/Duplicator.prefab", texName = "texDuplicatorIcon" } },
-            { "3DPrinterLarge", new TexData { addressable = "RoR2/Base/DuplicatorLarge/DuplicatorLarge.prefab", texName = "texDuplicatorIcon" } },
-            { "3DPrinterMilitary", new TexData { addressable = "RoR2/Base/DuplicatorMilitary/DuplicatorMilitary.prefab", texName = "texDuplicatorIcon" } },
-            { "3DPrinterWild", new TexData { addressable = "RoR2/Base/DuplicatorWild/DuplicatorWild.prefab", texName = "texDuplicatorIcon" } },
+            { "CleansingPool", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineCleanse.ShrineCleanse_prefab, texName = "texCleansingPoolIcon"} },
+            { "CleansingPoolSandy", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineCleanse_ShrineCleanseSandy.Variant_prefab, texName = "texCleansingPoolIcon"} },
+            { "CleansingPoolSnowy", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineCleanse_ShrineCleanseSnowy.Variant_prefab, texName = "texCleansingPoolIcon"} },
+            { "3DPrinter", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Duplicator.Duplicator_prefab, texName = "texDuplicatorIcon" } },
+            { "3DPrinterLarge", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_DuplicatorLarge.DuplicatorLarge_prefab, texName = "texDuplicatorIcon" } },
+            { "3DPrinterMilitary", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_DuplicatorMilitary.DuplicatorMilitary_prefab, texName = "texDuplicatorIcon" } },
+            { "3DPrinterWild", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_DuplicatorWild.DuplicatorWild_prefab, texName = "texDuplicatorIcon" } },
 
             // Barrels
-            { "Barrel", new TexData { addressable = "RoR2/Base/Barrel1/Barrel1.prefab", texName = "texBarrelIcon" } },
-            { "VoidStalk", new TexData { addressable = "RoR2/DLC1/VoidCoinBarrel/VoidCoinBarrel.prefab", texName = "texVoidStalkIcon" } }, // NOT VISIBLE ENOUGH
+            { "Barrel", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Barrel1.Barrel1_prefab, texName = "texBarrelIcon" } },
+            { "VoidStalk", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_VoidCoinBarrel.VoidCoinBarrel_prefab, texName = "texVoidStalkIcon" } },
 
-            // Charging zones
+            // // Charging zones
 
-            // Chests & Equipment
-            { "AdaptiveChest", new TexData { addressable = "RoR2/Base/CasinoChest/CasinoChest.prefab", texName = "texAdaptiveChestIcon" } },
-            { "SmallChest", new TexData { addressable = "RoR2/Base/Chest1/Chest1.prefab", texName = "texSmallChestIcon" } },
-            { "SmallCatChestDamage", new TexData { addressable = "RoR2/Base/CategoryChest/CategoryChestDamage.prefab", texName = "texSmallCatChestDamIcon" } },
-            { "SmallCatChestHealing", new TexData { addressable = "RoR2/Base/CategoryChest/CategoryChestHealing.prefab", texName = "texSmallCatChestHealIcon" } },
-            { "SmallCatChestUtility", new TexData { addressable = "RoR2/Base/CategoryChest/CategoryChestUtility.prefab", texName = "texSmallCatChestUtilIcon" } },
-            { "ChestCloacked", new TexData { addressable = "RoR2/Base/Chest1StealthedVariant/Chest1StealthedVariant.prefab", texName = "texCloackedChestIcon" } },
-            { "EquipmentBarrel", new TexData { addressable = "RoR2/Base/EquipmentBarrel/EquipmentBarrel.prefab", texName = "texEquipmentBarrelIcon" } },
+            // // Chests & Equipment
+            { "AdaptiveChest", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_CasinoChest.CasinoChest_prefab, texName = "texAdaptiveChestIcon" } },
+            { "SmallChest", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Chest1.Chest1_prefab, texName = "texSmallChestIcon" } },
+            { "SmallCatChestDamage", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_CategoryChest.CategoryChestDamage_prefab, texName = "texSmallCatChestDamIcon" } },
+            { "SmallCatChestHealing", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_CategoryChest.CategoryChestHealing_prefab, texName = "texSmallCatChestHealIcon" } },
+            { "SmallCatChestUtility", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_CategoryChest.CategoryChestUtility_prefab, texName = "texSmallCatChestUtilIcon" } },
+            { "ChestCloacked", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Chest1StealthedVariant.Chest1StealthedVariant_prefab, texName = "texCloackedChestIcon" } },
+            { "EquipmentBarrel", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_EquipmentBarrel.EquipmentBarrel_prefab, texName = "texEquipmentBarrelIcon" } },
             // Large
-            { "LargeChest", new TexData { addressable = "RoR2/Base/Chest2/Chest2.prefab", texName = "texLargeChestIcon" } },
-            { "LargeCatChestDamage", new TexData { addressable = "RoR2/DLC1/CategoryChest2/CategoryChest2Damage Variant.prefab", texName = "texLargeCatChestDamIcon" } },
-            { "LargeCatChestHealing", new TexData { addressable = "RoR2/DLC1/CategoryChest2/CategoryChest2Healing Variant.prefab", texName = "texLargeCatChestHealIcon" } },
-            { "LargeCatChestUtility", new TexData { addressable = "RoR2/DLC1/CategoryChest2/CategoryChest2Utility Variant.prefab", texName = "texLargeCatChestUtilIcon" } },
-            // Multishops
-            { "TripleShopEquipment", new TexData { addressable = "RoR2/Base/TripleShopEquipment/TripleShopEquipment.prefab", texName = "texTripleShopEquipmentIcon" } },
-            { "MultiShopEquipment", new TexData { addressable = "RoR2/Base/MultiShopEquipmentTerminal/MultiShopEquipmentTerminal.prefab", texName = "texTripleshopEquipmentIcon"}},
-            { "MultiShop", new TexData { addressable = "RoR2/Base/MultiShopTerminal/MultiShopTerminal.prefab", texName = "texTripleShopIcon" } },
-            { "LargeMultiShop", new TexData { addressable = "RoR2/Base/MultiShopLargeTerminal/MultiShopLargeTerminal.prefab", texName = "texTripleShopIcon" } },
-            { "TripleShop", new TexData { addressable = "RoR2/Base/TripleShop/TripleShop.prefab", texName = "texTripleShopIcon" } },
-            { "LargeTripleShop", new TexData { addressable = "RoR2/Base/TripleShopLarge/TripleShopLarge.prefab", texName = "texTripleShopIcon" } },
-            // Special
-            { "LegendaryChest", new TexData { addressable = "RoR2/Base/GoldChest/GoldChest.prefab", texName = "texLegendaryChestIcon" } },
-            { "LunarPod", new TexData { addressable = "RoR2/Base/LunarChest/LunarChest.prefab", texName = "texLunarPodIcon" } },
-            { "RustyLockbox", new TexData { addressable = "RoR2/Base/TreasureCache/Lockbox.prefab", texName = "texRustyLockboxIcon"} },
-            { "ScavSack", new TexData { addressable = "RoR2/Base/Scav/ScavBackpack.prefab", texName = "texScavBackpackIcon"} },
-            { "MultishopDelivery", new TexData { addressable = "RoR2/DLC1/FreeChestTerminalShippingDrone/FreeChestTerminalShippingDrone.prefab", texName = "texCrashedDeliveryIcon"} },
-            { "EncrustedCache", new TexData { addressable = "RoR2/DLC1/TreasureCacheVoid/LockboxVoid.prefab", texName = "texEncrustedCacheIcon"} },
-            { "VoidCradle", new TexData { addressable = "RoR2/DLC1/VoidChest/VoidChest.prefab", texName = "texVoidCradleIcon"} },
-            { "VoidPotentialChest", new TexData { addressable = "RoR2/DLC1/VoidTriple/VoidTriple.prefab", texName = "texVoidPotentialIcon"} },
-            { "AurelioniteFragment", new TexData { addressable = "RoR2/DLC2/FragmentPotentialPickup.prefab", texName = "texAurelioniteFragmentIcon"} },
+            { "LargeChest", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Chest2.Chest2_prefab, texName = "texLargeChestIcon" } },
+            { "LargeCatChestDamage", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_CategoryChest2_CategoryChest2Damage.Variant_prefab, texName = "texLargeCatChestDamIcon" } },
+            { "LargeCatChestHealing", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_CategoryChest2_CategoryChest2Healing.Variant_prefab, texName = "texLargeCatChestHealIcon" } },
+            { "LargeCatChestUtility", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_CategoryChest2_CategoryChest2Utility.Variant_prefab, texName = "texLargeCatChestUtilIcon" } },
+            // // Multishops
+            { "TripleShopEquipment", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_TripleShopEquipment.TripleShopEquipment_prefab, texName = "texTripleShopEquipmentIcon"} },
+            { "MultiShopEquipment", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_MultiShopEquipmentTerminal.MultiShopEquipmentTerminal_prefab, texName = "texTripleshopEquipmentIcon"}},
+            { "MultiShop", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_MultiShopTerminal.MultiShopTerminal_prefab, texName = "texTripleShopIcon" } },
+            { "LargeMultiShop", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_MultiShopLargeTerminal.MultiShopLargeTerminal_prefab, texName = "texTripleShopIcon" } },
+            { "TripleShop", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_TripleShop.TripleShop_prefab, texName = "texTripleShopIcon" } },
+            { "LargeTripleShop", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_TripleShopLarge.TripleShopLarge_prefab, texName = "texTripleShopIcon" } },
+            // // Special
+            { "LegendaryChest", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_GoldChest.GoldChest_prefab, texName = "texLegendaryChestIcon" } },
+            { "LunarPod", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_LunarChest.LunarChest_prefab, texName = "texLunarPodIcon" } },
+            { "RustyLockbox", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_TreasureCache.Lockbox_prefab, texName = "texRustyLockboxIcon"} },
+            { "ScavSack", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Scav.ScavBackpack_prefab, texName = "texScavBackpackIcon"} },
+            { "MultishopDelivery", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_FreeChestTerminalShippingDrone.FreeChestTerminalShippingDrone_prefab, texName = "texCrashedDeliveryIcon"} },
+            { "EncrustedCache", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_TreasureCacheVoid.LockboxVoid_prefab, texName = "texEncrustedCacheIcon"} },
+            { "VoidCradle", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_VoidChest.VoidChest_prefab, texName = "texVoidCradleIcon"} },
+            { "VoidPotentialChest", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_VoidTriple.VoidTriple_prefab, texName = "texVoidPotentialIcon"} },
+            { "AurelioniteFragment", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC2.FragmentPotentialPickup_prefab, texName = "texAurelioniteFragmentIcon"} },
 
-            // Drones
+            // // Drones
 
-            // Environment Specific
-            { "ArtifactPickup", new TexData { addressable = "RoR2/Base/Common/SetpiecePickup.prefab", texName = "texArtifactPickupIcon"} },
+            // // Environment Specific
+            { "ArtifactPickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Common.SetpiecePickup_prefab, texName = "texArtifactPickupIcon"} },
 
-            // Pickups
-            { "CommandEssence", new TexData { addressable = "RoR2/Base/Command/CommandCube.prefab", texName = "texCommandEssenceIcon" } },
-            { "GenericPickup", new TexData { addressable = "RoR2/Base/Common/GenericPickup.prefab", texName = "texGenericPickupIcon" } },
-            { "LogPickup", new TexData { addressable = "RoR2/Base/Common/LogPickup.prefab", texName = "texLogbookEntryIcon" } },
-            { "FuelArrayQuest", new TexData { addressable = "RoR2/Base/QuestVolatileBattery/QuestVolatileBatteryWorldPickup.prefab", texName = "texFuelArrayQuestIcon" } },
 
-            // Portals
+            // // Pickups
+            { "CommandEssence", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Command.CommandCube_prefab, texName = "texCommandEssenceIcon" } },
+            { "GenericPickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Common.GenericPickup_prefab, texName = "texGenericPickupIcon" } },
+            { "LogPickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_logbook.logbookPPLocal_prefab, texName = "texLogbookEntryIcon" } },
+            { "FuelArrayQuest", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_QuestVolatileBattery.QuestVolatileBatteryWorldPickup_prefab, texName = "texFuelArrayQuestIcon" } },
 
-            // Scrapper
-            { "Scrapper", new TexData { addressable = "RoR2/Base/Scrapper/Scrapper.prefab", texName = "texScrapperIcon" } },
+            // // Portals
+
+            // // Scrapper
+            { "Scrapper", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Scrapper.Scrapper_prefab, texName = "texScrapperIcon" } },
 
             // Shrines
 
@@ -97,8 +98,13 @@ namespace RoR2_PingIconsOverhaul
 
         public void Awake()
         {
+            // Intiialize the logger
+            Log.Init(Logger);
+            Log.Info($"Initializing {PluginName} v{PluginVersion} by {PluginAuthor}");
+
             // Load the asset bundle from the plugin's directory
             bundle = AssetBundle.LoadFromFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Info.Location), bundleName));
+
             // Set icons for interactables
             SetIconsForInteractables();
         }
@@ -110,51 +116,81 @@ namespace RoR2_PingIconsOverhaul
                 TexData texData = keyValuePair.Value;
 
                 // Load interactable prefab from the addressable system, skip if it fails
-                try
-                {
-                    GameObject interactable = LoadInteractable(texData, keyValuePair.Key);
-                    if (interactable == null) continue;
+                GameObject interactable = LoadInteractable(texData, keyValuePair.Key);
+                if (interactable == null) continue;
 
-                    // Load icon from the asset bundle, skip if it fails
-                    Sprite icon = LoadIcon(texData);
-                    if (interactable == null) continue;
+                // Load icon from the asset bundle, skip if it fails
+                Sprite icon = LoadIcon(texData);
+                if (interactable == null) continue;
 
-                    // Override ping icon for the interactable
-                    AddPingIconOverride(interactable, icon);
-                }
-                catch (System.Exception ex)
-                {
-                    Log.Error($"Error processing {keyValuePair.Key}: {ex.Message}");
-                }
+                // Override ping icon for the interactable
+                AddPingIconOverride(interactable, icon);
             }
         }
 
         private static GameObject LoadInteractable(TexData texData, string key)
         {
-            GameObject interactable = Addressables.LoadAssetAsync<GameObject>(texData.addressable).WaitForCompletion();
-            if (!interactable)
+            try
             {
-                Log.Error($"Failed to load interactable {texData.addressable} for {key}");
+                GameObject interactable = Addressables.LoadAssetAsync<GameObject>(texData.addressable).WaitForCompletion();
+                if (!interactable)
+                {
+                    Log.Error($"Failed to load interactable {texData.addressable} for {key}");
+                    return null;
+                }
+                return interactable;
+            }
+            catch (System.Exception ex)
+            {
+                Log.Error($"Exception while loading interactable {texData.addressable} for {key}: {ex.Message}");
                 return null;
             }
-            return interactable;
         }
 
         private static Sprite LoadIcon(TexData texData)
         {
-            Sprite icon = bundle.LoadAsset<Sprite>(texData.texName);
-            if (icon == null)
+            try
             {
-                Log.Error($"Failed to load icon {texData.texName} from bundle for {texData.addressable}");
+                if (bundle == null)
+                {
+                    Log.Error("Asset bundle is not loaded.");
+                    return null;
+                }
+
+                Sprite icon = bundle.LoadAsset<Sprite>(texData.texName);
+                if (icon == null)
+                {
+                    Log.Error($"Failed to load icon {texData.texName} from bundle for {texData.addressable}");
+                    return null;
+                }
+                return icon;
+            }
+            catch (System.Exception ex)
+            {
+                Log.Error($"Exception while loading icon {texData.texName} from bundle for {texData.addressable}: {ex.Message}");
                 return null;
             }
-            return icon;
         }
 
         private void AddPingIconOverride(GameObject interactable, Sprite sprite)
         {
-            PingInfoProvider pingProvider = interactable.AddComponent<PingInfoProvider>();
-            pingProvider.pingIconOverride = sprite;
+            try
+            {
+                interactable.TryGetComponent<PingInfoProvider>(out PingInfoProvider pingProvider);
+
+                if (pingProvider == null)
+                {
+                    pingProvider = interactable.AddComponent<PingInfoProvider>();
+                }
+
+                pingProvider.pingIconOverride = sprite;
+
+                Log.Info($"Successfully added ping icon override for {interactable.name} with icon {sprite.name}");
+            }
+            catch (System.Exception ex)
+            {
+                Log.Error($"Failed to add ping icon override for {interactable.name}: {ex.Message}");
+            }
         }
     }
 }

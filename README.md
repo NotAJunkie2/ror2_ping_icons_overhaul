@@ -1,6 +1,6 @@
 # Overview
 
-![Alt text](PingIconsOverhaul/Thunderstore/icon.png)
+![Alt text](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/PingIconsOverhaul/Thunderstore/icon.png)
 
 **Ping Icons Overhaul** is a **Risk of Rain 2** mod that replaces the default ping icons with custom ones for almost, making them more visually appealing and easier to understand.
 

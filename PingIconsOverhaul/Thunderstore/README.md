@@ -1,6 +1,6 @@
 # Overview
 
-![Alt text](./icon.png)
+![Alt text](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/PingIconsOverhaul/Thunderstore/icon.png)
 
 **Ping Icons Overhaul** is a **Risk of Rain 2** mod that replaces the default ping icons with custom ones for almost, making them more visually appealing and easier to understand.
 
@@ -10,10 +10,10 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 ## Barrels
 
-| Interactable | Icon                                                                   |
-| ------------ | ---------------------------------------------------------------------- |
-| Barrel       | ![texBarrelIcon](./PingIconsOverhaul/image/README/barrels/texBarrelIcon.png "Barrel")           |
-| Void Stalk   | ![texVoidStalkIcon](./PingIconsOverhaul/image/README/barrels/texVoidStalkIcon.png "Void Stalk") |
+| Interactable | Icon                                                                                                                                                                                                       |
+| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Barrel       | ![texBarrelIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/blob/main/image/README/barrels/texBarrelIcon.png "Barrel")           |
+| Void Stalk   | ![texVoidStalkIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/blob/main/image/README/barrels/texVoidStalkIcon.png "Void Stalk") |
 
 ## Charging zones
 
@@ -31,30 +31,30 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 ## Chests
 
-| Interactable                   | Icon                                                                                                |
-| ------------------------------ | --------------------------------------------------------------------------------------------------- |
-| Adaptive Chest                 | ![texAdaptiveChestIcon](./PingIconsOverhaul/image/README/chests/texAdaptiveChestIcon.png "Adaptive Chest")                   |
-| Aurelionite Fragment           | ![texAurelioniteFragmentIcon](./PingIconsOverhaul/image/README/chests/texAurelioniteFragmentIcon.png "Aurelionite Fragment") |
-| Cloacked Chest                 | ![texCloackedChestIcon](./PingIconsOverhaul/image/README/chests/texCloackedChestIcon.png)                                 |
-| Crashed Multishop "Delivery"   | ![texCrashedDeliveryIcon](./PingIconsOverhaul/image/README/chests/texCrashedDeliveryIcon.png)                                                      |
-| Encrusted Cache                | ![texEncrustedCacheIcon](./PingIconsOverhaul/image/README/chests/texEncrustedCacheIcon.png)                                                      |
-| Equipment Barrel               | ![texEquipmentBarrelIcon](./PingIconsOverhaul/image/README/chests/texEquipmentBarrelIcon.png)                                                      |
-| Equipment Triple Shop          | ![texTripleShopEquipmentIcon](./PingIconsOverhaul/image/README/chests/texTripleShopEquipmentIcon.png)                                                      |
-| Large Category Chest - Damage  | ![texLargeCatChestDamIcon](./PingIconsOverhaul/image/README/chests/large_chests/texLargeCatChestDamIcon.png)                                                      |
-| Large Category Chest - Healing | ![texLargeCatChestHealIcon](./PingIconsOverhaul/image/README/chests/large_chests/texLargeCatChestHealIcon.png)                                                      |
-| Large Category Chest - Utility | ![texLargeCatChestUtilIcon](./PingIconsOverhaul/image/README/chests/large_chests/texLargeCatChestUtilIcon.png)                                                      |
-| Large Chest                    | ![texLargeChestIcon](./PingIconsOverhaul/image/README/chests/large_chests/texLargeChestIcon.png)                                                      |
-| Legendary Chest                | ![texLegendaryChestIcon](./PingIconsOverhaul/image/README/chests/texLegendaryChestIcon.png)                                                      |
-| Lunar Pod                      | ![texLunarPodIcon](./PingIconsOverhaul/image/README/chests/texLunarPodIcon.png)                                                      |
-| Multishop Terminal             | ![texTripleShopIcon](./PingIconsOverhaul/image/README/chests/texTripleShopIcon.png)                                                      |
-| Rusty Lockbox                  | ![texRustyLockboxIcon](./PingIconsOverhaul/image/README/chests/texRustyLockboxIcon.png)                                                      |
-| Scavenger's Sack               | ![texScavBackpackIcon](./PingIconsOverhaul/image/README/chests/texScavBackpackIcon.png)                                                      |
-| Small Category Chest - Damage  | ![texSmallCatChestDamIcon](./PingIconsOverhaul/image/README/chests/small_chests/texSmallCatChestDamIcon.png)                                                      |
-| Small Category Chest - Healing | ![texSmallCatChestHealIcon](./PingIconsOverhaul/image/README/chests/small_chests/texSmallCatChestHealIcon.png)                                                      |
-| Small Category Chest - Utility | ![texSmallCatChestUtilIcon](./PingIconsOverhaul/image/README/chests/small_chests/texSmallCatChestUtilIcon.png)                                                      |
-| Small Chest                    | ![texSmallChestIcon](./PingIconsOverhaul/image/README/chests/small_chests/texSmallChestIcon.png)                                                      |
-| Void Cradle                    | ![texVoidCradleIcon](./PingIconsOverhaul/image/README/chests/texVoidCradleIcon.png)                                                      |
-| Void Potential                 | ![texVoidPotentialIcon](./PingIconsOverhaul/image/README/chests/texVoidPotentialIcon.png)                                                      |
+| Interactable                   | Icon                                                                                                                    |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| Adaptive Chest                 | ![texAdaptiveChestIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texAdaptiveChestIcon.png "Adaptive Chest")                   |
+| Aurelionite Fragment           | ![texAurelioniteFragmentIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texAurelioniteFragmentIcon.png "Aurelionite Fragment") |
+| Cloacked Chest                 | ![texCloackedChestIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texCloackedChestIcon.png)                                 |
+| Crashed Multishop "Delivery"   | ![texCrashedDeliveryIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texCrashedDeliveryIcon.png)                             |
+| Encrusted Cache                | ![texEncrustedCacheIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texEncrustedCacheIcon.png)                               |
+| Equipment Barrel               | ![texEquipmentBarrelIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texEquipmentBarrelIcon.png)                             |
+| Equipment Triple Shop          | ![texTripleShopEquipmentIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texTripleShopEquipmentIcon.png)                     |
+| Large Category Chest - Damage  | ![texLargeCatChestDamIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/large_chests/texLargeCatChestDamIcon.png)              |
+| Large Category Chest - Healing | ![texLargeCatChestHealIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/large_chests/texLargeCatChestHealIcon.png)            |
+| Large Category Chest - Utility | ![texLargeCatChestUtilIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/large_chests/texLargeCatChestUtilIcon.png)            |
+| Large Chest                    | ![texLargeChestIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/large_chests/texLargeChestIcon.png)                          |
+| Legendary Chest                | ![texLegendaryChestIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texLegendaryChestIcon.png)                               |
+| Lunar Pod                      | ![texLunarPodIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texLunarPodIcon.png)                                           |
+| Multishop Terminal             | ![texTripleShopIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texTripleShopIcon.png)                                       |
+| Rusty Lockbox                  | ![texRustyLockboxIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texRustyLockboxIcon.png)                                   |
+| Scavenger's Sack               | ![texScavBackpackIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texScavBackpackIcon.png)                                   |
+| Small Category Chest - Damage  | ![texSmallCatChestDamIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/small_chests/texSmallCatChestDamIcon.png)              |
+| Small Category Chest - Healing | ![texSmallCatChestHealIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/small_chests/texSmallCatChestHealIcon.png)            |
+| Small Category Chest - Utility | ![texSmallCatChestUtilIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/small_chests/texSmallCatChestUtilIcon.png)            |
+| Small Chest                    | ![texSmallChestIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/small_chests/texSmallChestIcon.png)                          |
+| Void Cradle                    | ![texVoidCradleIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texVoidCradleIcon.png)                                       |
+| Void Potential                 | ![texVoidPotentialIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texVoidPotentialIcon.png)                                 |
 
 ## Drones
 
@@ -72,38 +72,38 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 ## Environment Specific
 
-| Interactable               | Icon |
-| -------------------------- | ---- |
-| Artifact Pickup | ![texArtifactPickup](./PingIconsOverhaul/image/README/environment_specific/texArtifactPickup.png) |
-| Alloy Vulture Nest         |      |
-| Aurelionite Geode          |      |
-| Broken REX                 |      |
-| Cauldron                   |      |
-| Chef's Wok                 |      |
-| Compound Generator         |      |
-| Fan                        |      |
-| Glass Frog                 |      |
-| Halcyon Beacon             |      |
-| Laptop                     |      |
-| Lunar Bud                  |      |
-| Lunar Seer                 |      |
-| Newt Altar                 |      |
-| Obelisk                    |      |
-| Pressure Plate             |      |
-| Radio Scanner              |      |
-| Slab                       |      |
-| Survivor Pod               |      |
-| Survivor Suspended In Time |      |
-| Timed Chest                |      |
+| Interactable               | Icon                                                                                            |
+| -------------------------- | ----------------------------------------------------------------------------------------------- |
+| Artifact Pickup            | ![texArtifactPickup](./PingIconsOverhaul/image/README/environment_specific/texArtifactPickup.png) |
+| Alloy Vulture Nest         |                                                                                                 |
+| Aurelionite Geode          |                                                                                                 |
+| Broken REX                 |                                                                                                 |
+| Cauldron                   |                                                                                                 |
+| Chef's Wok                 |                                                                                                 |
+| Compound Generator         |                                                                                                 |
+| Fan                        |                                                                                                 |
+| Glass Frog                 |                                                                                                 |
+| Halcyon Beacon             |                                                                                                 |
+| Laptop                     |                                                                                                 |
+| Lunar Bud                  |                                                                                                 |
+| Lunar Seer                 |                                                                                                 |
+| Newt Altar                 |                                                                                                 |
+| Obelisk                    |                                                                                                 |
+| Pressure Plate             |                                                                                                 |
+| Radio Scanner              |                                                                                                 |
+| Slab                       |                                                                                                 |
+| Survivor Pod               |                                                                                                 |
+| Survivor Suspended In Time |                                                                                                 |
+| Timed Chest                |                                                                                                 |
 
 ## Pickups
 
-| Interactable    | Icon                                           |
-| --------------- | ---------------------------------------------- |
+| Interactable    | Icon                                                                                       |
+| --------------- | ------------------------------------------------------------------------------------------ |
 | Command Essence | ![texCommandEssenceIcon](./PingIconsOverhaul/image/README/pickups/texCommandEssenceIcon.png) |
 | Fuel Array      | ![texFuelArrayQuestIcon](./PingIconsOverhaul/image/README/pickups/texFuelArrayQuestIcon.png) |
-| Generic Pickup  | ![texGenericPickupIcon](./PingIconsOverhaul/image/README/pickups/texGenericPickupIcon.png) |
-| Log Pickup      | ![texLogbookEntryIcon](./PingIconsOverhaul/image/README/pickups/texLogbookEntryIcon.png) |
+| Generic Pickup  | ![texGenericPickupIcon](./PingIconsOverhaul/image/README/pickups/texGenericPickupIcon.png)   |
+| Log Pickup      | ![texLogbookEntryIcon](./PingIconsOverhaul/image/README/pickups/texLogbookEntryIcon.png)     |
 
 ## Portals
 
@@ -122,15 +122,15 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 ## Printers
 
-| Interactable   | Icon                                           |
-| -------------- | ---------------------------------------------- |
-| 3D Printer     | ![texDuplicatorIcon](./PingIconsOverhaul/image/README/3d_printers/texDuplicatorIcon.png) |
+| Interactable   | Icon                                                                                         |
+| -------------- | -------------------------------------------------------------------------------------------- |
+| 3D Printer     | ![texDuplicatorIcon](./PingIconsOverhaul/image/README/3d_printers/texDuplicatorIcon.png)       |
 | Cleansing Pool | ![texCleansingPoolIcon](./PingIconsOverhaul/image/README/3d_printers/texCleansingPoolIcon.png) |
 
 ## Scrapper
 
-| Interactable | Icon                                           |
-| ------------ | ---------------------------------------------- |
+| Interactable | Icon                                                                            |
+| ------------ | ------------------------------------------------------------------------------- |
 | Scrapper     | ![texScrapperIcon](./PingIconsOverhaul/image/README/scrapper/texScrapperIcon.png) |
 
 ## Shrines

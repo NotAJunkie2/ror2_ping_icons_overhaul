@@ -98,6 +98,10 @@ namespace PingIconsOverhaul
         {
             // Intiialize the logger
             Log.Init(Logger);
+        }
+
+        public void Start()
+        {
             Log.Info($"Initializing {PluginName} v{PluginVersion} by {PluginAuthor}");
 
             // Load the asset bundle from the plugin's directory

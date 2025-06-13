@@ -338,5 +338,7 @@ bin/*
 obj/*
 # Other
 ignore/*
-/PingIconsOverhaul/Thunderstore/plugins/*
+/PingIconsOverhaul/Thunderstore/plugins/PingIconsOverhaul/pingiconsoverhaul
+*.dll
+*.pdb
 *.zip

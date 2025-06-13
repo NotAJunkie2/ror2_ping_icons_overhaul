@@ -20,7 +20,7 @@ namespace PingIconsOverhaul
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "NotAJunkie";
         public const string PluginName = "PingIconsOverhaul";
-        public const string PluginVersion = "0.4.1";
+        public const string PluginVersion = "1.0.1";
         private const string bundleName = "pingiconsoverhaul";
         // Class variables
         private static AssetBundle bundle;

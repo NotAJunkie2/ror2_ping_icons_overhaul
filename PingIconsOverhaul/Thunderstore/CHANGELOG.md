@@ -1,3 +1,13 @@
+## 1.0.1
+
+- Bumped up to 1.0.1 because I messed up the manifest when uploading it to Thunderstore 💀
+- Restructured Thunderstore folder hierarchy a bit.
+- Hopefully repaired Thunderstore README
+
+### Known Issues
+
+- Skill issue.
+
 ## 0.4.1
 
 - Replaced hard-coded addressable strings with constants from ``RoR2BepInExPack.GameAssetPaths``.

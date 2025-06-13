@@ -1,5 +1,4 @@
 using BepInEx;
-using R2API;
 using RoR2;
 using System.Collections.Generic;
 using UnityEngine;
@@ -13,7 +12,6 @@ namespace PingIconsOverhaul
         public string texName;
     }
 
-    [BepInDependency(LanguageAPI.PluginGUID)]
     [BepInPlugin(PluginGUID, PluginName, PluginVersion)]
 
     public class PingIconsOverhaul : BaseUnityPlugin

@@ -12,8 +12,8 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 | Interactable | Icon                                                                                                                                                                                                       |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Barrel       | ![texBarrelIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/blob/main/image/README/barrels/texBarrelIcon.png "Barrel")           |
-| Void Stalk   | ![texVoidStalkIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/blob/main/image/README/barrels/texVoidStalkIcon.png "Void Stalk") |
+| Barrel       | ![texBarrelIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/barrels/texBarrelIcon.png "Barrel")           |
+| Void Stalk   | ![texVoidStalkIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/barrels/texVoidStalkIcon.png "Void Stalk") |
 
 ## Charging zones
 
@@ -74,7 +74,7 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 | Interactable               | Icon                                                                                            |
 | -------------------------- | ----------------------------------------------------------------------------------------------- |
-| Artifact Pickup            | ![texArtifactPickup](./PingIconsOverhaul/image/README/environment_specific/texArtifactPickup.png) |
+| Artifact Pickup            | ![texArtifactPickup](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/environment_specific/texArtifactPickup.png) |
 | Alloy Vulture Nest         |                                                                                                 |
 | Aurelionite Geode          |                                                                                                 |
 | Broken REX                 |                                                                                                 |
@@ -100,10 +100,10 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 | Interactable    | Icon                                                                                       |
 | --------------- | ------------------------------------------------------------------------------------------ |
-| Command Essence | ![texCommandEssenceIcon](./PingIconsOverhaul/image/README/pickups/texCommandEssenceIcon.png) |
-| Fuel Array      | ![texFuelArrayQuestIcon](./PingIconsOverhaul/image/README/pickups/texFuelArrayQuestIcon.png) |
-| Generic Pickup  | ![texGenericPickupIcon](./PingIconsOverhaul/image/README/pickups/texGenericPickupIcon.png)   |
-| Log Pickup      | ![texLogbookEntryIcon](./PingIconsOverhaul/image/README/pickups/texLogbookEntryIcon.png)     |
+| Command Essence | ![texCommandEssenceIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/pickups/texCommandEssenceIcon.png) |
+| Fuel Array      | ![texFuelArrayQuestIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/pickups/texFuelArrayQuestIcon.png) |
+| Generic Pickup  | ![texGenericPickupIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/pickups/texGenericPickupIcon.png)   |
+| Log Pickup      | ![texLogbookEntryIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/pickups/texLogbookEntryIcon.png)     |
 
 ## Portals
 
@@ -124,14 +124,14 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 | Interactable   | Icon                                                                                         |
 | -------------- | -------------------------------------------------------------------------------------------- |
-| 3D Printer     | ![texDuplicatorIcon](./PingIconsOverhaul/image/README/3d_printers/texDuplicatorIcon.png)       |
-| Cleansing Pool | ![texCleansingPoolIcon](./PingIconsOverhaul/image/README/3d_printers/texCleansingPoolIcon.png) |
+| 3D Printer     | ![texDuplicatorIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/3d_printers/texDuplicatorIcon.png)       |
+| Cleansing Pool | ![texCleansingPoolIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/3d_printers/texCleansingPoolIcon.png) |
 
 ## Scrapper
 
 | Interactable | Icon                                                                            |
 | ------------ | ------------------------------------------------------------------------------- |
-| Scrapper     | ![texScrapperIcon](./PingIconsOverhaul/image/README/scrapper/texScrapperIcon.png) |
+| Scrapper     | ![texScrapperIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/scrapper/texScrapperIcon.png) |
 
 ## Shrines
 

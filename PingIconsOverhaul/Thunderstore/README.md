@@ -2,7 +2,7 @@
 
 ![Alt text](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/PingIconsOverhaul/Thunderstore/icon.png)
 
-**Ping Icons Overhaul** is a **Risk of Rain 2** mod that replaces the default ping icons with custom ones for almost, making them more visually appealing and easier to understand.
+**Ping Icons Overhaul** is a **Risk of Rain 2** mod that replaces the default ping icons with custom ones, making them more visually appealing and easier to understand.
 
 # Featured icons
 
@@ -10,29 +10,29 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 ## Barrels
 
-| Interactable | Icon                                                                                                                                                                                                       |
-| ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Interactable | Icon                                                                                                                                               |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Barrel       | ![texBarrelIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/barrels/texBarrelIcon.png "Barrel")           |
 | Void Stalk   | ![texVoidStalkIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/barrels/texVoidStalkIcon.png "Void Stalk") |
 
 ## Charging zones
 
-| Interactable          | Icon |
-| --------------------- | ---- |
-| Assessment Focus      |      |
-| Cell Vent             |      |
-| Deep Void Signal      |      |
-| Pillar of Blood       |      |
-| Pillar of Design      |      |
-| Pillar of Mass        |      |
-| Pillar of Soul        |      |
-| Primordial Teleporter |      |
-| Teleporter            |      |
+| Interactable          | Icon                                                                                                                                                                           |
+| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Assessment Focus      | ![texVoidFocusIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/charging_zones/texVoidFocusIcon.png "Assessment Focus")                |
+| Cell Vent             | ![texCellVentIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/charging_zones/texCellVentIcon.png "Cell Vent")                         |
+| Deep Void Signal      | ![texVoidSignalIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/charging_zones/texVoidSignalIcon.png "Deep Void Signal")              |
+| Pillar of Blood       | ![texPillarBloodIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/charging_zones/texPillarBloodIcon.png "Pillar of Blood")             |
+| Pillar of Design      | ![texPillarDesignIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/charging_zones/texPillarDesignIcon.png "Pillar of Design")          |
+| Pillar of Mass        | ![texPillarMassIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/charging_zones/texPillarMassIcon.png "Pillar of Mass")                |
+| Pillar of Soul        | ![texPillarSoulIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/charging_zones/texPillarSoulIcon.png "Pillar of Soul")                |
+| Primordial Teleporter | ![texMoonTeleporterIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/charging_zones/texMoonTeleporterIcon.png "Primordial Teleporter") |
+| Teleporter            | ![texTeleporterIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/charging_zones/texTeleporterIcon.png "Teleporter")                    |
 
 ## Chests
 
-| Interactable                   | Icon                                                                                                                    |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------- |
+| Interactable                   | Icon                                                                                                                                                                            |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Adaptive Chest                 | ![texAdaptiveChestIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texAdaptiveChestIcon.png "Adaptive Chest")                   |
 | Aurelionite Fragment           | ![texAurelioniteFragmentIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texAurelioniteFragmentIcon.png "Aurelionite Fragment") |
 | Cloacked Chest                 | ![texCloackedChestIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/chests/texCloackedChestIcon.png)                                 |
@@ -72,34 +72,34 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 ## Environment Specific
 
-| Interactable               | Icon                                                                                            |
-| -------------------------- | ----------------------------------------------------------------------------------------------- |
+| Interactable               | Icon                                                                                                                                                    |
+| -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Artifact Pickup            | ![texArtifactPickup](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/environment_specific/texArtifactPickup.png) |
-| Alloy Vulture Nest         |                                                                                                 |
-| Aurelionite Geode          |                                                                                                 |
-| Broken REX                 |                                                                                                 |
-| Cauldron                   |                                                                                                 |
-| Chef's Wok                 |                                                                                                 |
-| Compound Generator         |                                                                                                 |
-| Fan                        |                                                                                                 |
-| Glass Frog                 |                                                                                                 |
-| Halcyon Beacon             |                                                                                                 |
-| Laptop                     |                                                                                                 |
-| Lunar Bud                  |                                                                                                 |
-| Lunar Seer                 |                                                                                                 |
-| Newt Altar                 |                                                                                                 |
-| Obelisk                    |                                                                                                 |
-| Pressure Plate             |                                                                                                 |
-| Radio Scanner              |                                                                                                 |
-| Slab                       |                                                                                                 |
-| Survivor Pod               |                                                                                                 |
-| Survivor Suspended In Time |                                                                                                 |
-| Timed Chest                |                                                                                                 |
+| Alloy Vulture Nest         |                                                                                                                                                         |
+| Aurelionite Geode          |                                                                                                                                                         |
+| Broken REX                 |                                                                                                                                                         |
+| Cauldron                   |                                                                                                                                                         |
+| Chef's Wok                 |                                                                                                                                                         |
+| Compound Generator         |                                                                                                                                                         |
+| Fan                        |                                                                                                                                                         |
+| Glass Frog                 |                                                                                                                                                         |
+| Halcyon Beacon             |                                                                                                                                                         |
+| Laptop                     |                                                                                                                                                         |
+| Lunar Bud                  |                                                                                                                                                         |
+| Lunar Seer                 |                                                                                                                                                         |
+| Newt Altar                 |                                                                                                                                                         |
+| Obelisk                    |                                                                                                                                                         |
+| Pressure Plate             |                                                                                                                                                         |
+| Radio Scanner              |                                                                                                                                                         |
+| Slab                       |                                                                                                                                                         |
+| Survivor Pod               |                                                                                                                                                         |
+| Survivor Suspended In Time |                                                                                                                                                         |
+| Timed Chest                |                                                                                                                                                         |
 
 ## Pickups
 
-| Interactable    | Icon                                                                                       |
-| --------------- | ------------------------------------------------------------------------------------------ |
+| Interactable    | Icon                                                                                                                                               |
+| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Command Essence | ![texCommandEssenceIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/pickups/texCommandEssenceIcon.png) |
 | Fuel Array      | ![texFuelArrayQuestIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/pickups/texFuelArrayQuestIcon.png) |
 | Generic Pickup  | ![texGenericPickupIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/pickups/texGenericPickupIcon.png)   |
@@ -122,15 +122,15 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 ## Printers
 
-| Interactable   | Icon                                                                                         |
-| -------------- | -------------------------------------------------------------------------------------------- |
+| Interactable   | Icon                                                                                                                                                 |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
 | 3D Printer     | ![texDuplicatorIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/3d_printers/texDuplicatorIcon.png)       |
 | Cleansing Pool | ![texCleansingPoolIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/3d_printers/texCleansingPoolIcon.png) |
 
 ## Scrapper
 
-| Interactable | Icon                                                                            |
-| ------------ | ------------------------------------------------------------------------------- |
+| Interactable | Icon                                                                                                                                    |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
 | Scrapper     | ![texScrapperIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/scrapper/texScrapperIcon.png) |
 
 ## Shrines

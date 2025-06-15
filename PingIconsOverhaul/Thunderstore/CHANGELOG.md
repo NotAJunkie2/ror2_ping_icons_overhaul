@@ -1,13 +1,30 @@
+## 1.1.0
+
+- Added icons for **Charging Zones** category.
+
+### Bug Fixes
+
+- Legendary Chest on **Abyssal Depths** now displays correct icon.
+- Artifact Pickup now displays correct icon.
+
+### Dev Tools
+- Pressing ```\``` (Backslash) now logs all tracked InstanceTracker entries to the console, to aid with debugging interactables.
+
+### Known Issues
+
+- **Teleporter** (normal and primordial) icon is not displayed - currently investigating correct implementation.
+- **Log Pickup** is still not displaying the correct icon.
+
 ## 1.0.2
 
-- README updated for Thunderstore, hopefully for sure
-- Moved icon initialization to ``Start`` method
+- README updated for Thunderstore, hopefully for sure.
+- Moved icon initialization to ``Start`` method.
 
 ## 1.0.1
 
-- Bumped up to 1.0.1 because I messed up the manifest when uploading it to Thunderstore 💀
+- Bumped up to 1.0.1 because I messed up the manifest when uploading it to Thunderstore 💀.
 - Restructured Thunderstore folder hierarchy a bit.
-- Hopefully repaired Thunderstore README
+- Hopefully repaired Thunderstore README.
 
 ### Known Issues
 

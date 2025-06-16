@@ -4,6 +4,8 @@
 
 **Ping Icons Overhaul** is a **Risk of Rain 2** mod that replaces the default ping icons with custom ones, making them more visually appealing and easier to understand.
 
+[CHANGELOG](./PingIconsOverhaul/Thunderstore/CHANGELOG.md "CHANGELOG")
+
 # Featured icons
 
 Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki](https://riskofrain2.fandom.com/wiki/Interactables)
@@ -152,6 +154,6 @@ Categories are taken from the fandom wiki - [Interactables - Risk of Rain 2 Wiki
 
 | Interactables                | Icon |
 | ---------------------------- | ---- |
-| Beacon: Resupply             |      |
-| Eclipse Zero Vending Machine |      |
-| Quantum Tunnel               |      |
+| Beacon: Resupply             | ![texResupplyIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/skill_related/texResupplyIcon.png)     |
+| Eclipse Zero Vending Machine | ![texVendingMachineIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/skill_related/texVendingMachineIcon.png)     |
+| Quantum Tunnel               | ![texTunnelIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/skill_related/texTunnelIcon.png)

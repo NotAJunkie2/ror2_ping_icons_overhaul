@@ -21,7 +21,7 @@ namespace PingIconsOverhaul
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "NotAJunkie";
         public const string PluginName = "PingIconsOverhaul";
-        public const string PluginVersion = "1.1.0";
+        public const string PluginVersion = "1.2.0";
         private const string bundleName = "pingiconsoverhaul";
         // Class variables
         private static AssetBundle bundle;
@@ -40,7 +40,7 @@ namespace PingIconsOverhaul
             { "Barrel1", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Barrel1.Barrel1_prefab, texName = "texBarrelIcon" } },
             { "VoidCoinBarrel", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_VoidCoinBarrel.VoidCoinBarrel_prefab, texName = "texVoidStalkIcon" } },
 
-            // // Charging zones
+            // Charging zones
             { "Teleporter", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Teleporters.TeleporterChargingPositionIndicator_prefab, texName = "texTeleporterIcon" } },
             // FIX with RoR2/Base/Teleporters/TeleporterChargingPositionIndicator.prefab
             // { "LunarTeleporter Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Teleporters.TeleporterChargingPositionIndicator_prefab, texName = "texMoonTeleporterIcon" } }, // FIX
@@ -54,7 +54,7 @@ namespace PingIconsOverhaul
             { "NullSafeZone", new TexData { addressable = "", texName = "texCellVentIcon"} },
             { "InfiniteTowerSafeWard", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_GameModes_InfiniteTowerRun_InfiniteTowerAssets.InfiniteTowerSafeWard_prefab, texName = "texVoidFocusIcon"} },
 
-            // // Chests & Equipment
+            // Chests & Equipment
             { "CasinoChest", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_CasinoChest.CasinoChest_prefab, texName = "texAdaptiveChestIcon" } },
             { "Chest1", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Chest1.Chest1_prefab, texName = "texSmallChestIcon" } },
             { "CategoryChestDamage", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_CategoryChest.CategoryChestDamage_prefab, texName = "texSmallCatChestDamIcon" } },
@@ -67,11 +67,11 @@ namespace PingIconsOverhaul
             { "CategoryChest2Damage Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_CategoryChest2_CategoryChest2Damage.Variant_prefab, texName = "texLargeCatChestDamIcon" } },
             { "CategoryChest2Healing Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_CategoryChest2_CategoryChest2Healing.Variant_prefab, texName = "texLargeCatChestHealIcon" } },
             { "CategoryChest2Utility Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_CategoryChest2_CategoryChest2Utility.Variant_prefab, texName = "texLargeCatChestUtilIcon" } },
-            // // Multishops
+            // Multishops
             { "MultiShopEquipment", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_MultiShopEquipmentTerminal.MultiShopEquipmentTerminal_prefab, texName = "texTripleshopEquipmentIcon"}},
             { "MultiShopTerminal", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_MultiShopTerminal.MultiShopTerminal_prefab, texName = "texTripleShopIcon" } },
             { "MultiShopLargeTerminal", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_MultiShopLargeTerminal.MultiShopLargeTerminal_prefab, texName = "texTripleShopIcon" } },
-            // // Special
+            // Special
             { "GoldChest", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_GoldChest.GoldChest_prefab, texName = "texLegendaryChestIcon" } },
             { "LunarChest", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_LunarChest.LunarChest_prefab, texName = "texLunarPodIcon" } },
             { "Lockbox", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_TreasureCache.Lockbox_prefab, texName = "texRustyLockboxIcon"} },
@@ -82,26 +82,29 @@ namespace PingIconsOverhaul
             { "VoidTriple", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_VoidTriple.VoidTriple_prefab, texName = "texVoidPotentialIcon"} },
             { "FragmentPotentialPickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC2.FragmentPotentialPickup_prefab, texName = "texAurelioniteFragmentIcon"} },
 
-            // // Drones
+            // Drones
 
-            // // Environment Specific
+            // Environment Specific
             { "SetpiecePickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Common.SetpiecePickup_prefab, texName = "texArtifactPickupIcon"} },
 
 
-            // // Pickups
+            // Pickups
             { "CommandCube", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Command.CommandCube_prefab, texName = "texCommandEssenceIcon" } },
             { "GenericPickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Common.GenericPickup_prefab, texName = "texGenericPickupIcon" } },
             { "LogPickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Common.LogPickup_prefab, texName = "texLogbookEntryIcon" } },
             { "QuestVolatileBatteryWorldPickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_QuestVolatileBattery.QuestVolatileBatteryWorldPickup_prefab, texName = "texFuelArrayQuestIcon" } },
 
-            // // Portals
+            // Portals
 
-            // // Scrapper
+            // Scrapper
             { "Scrapper", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Scrapper.Scrapper_prefab, texName = "texScrapperIcon" } },
 
             // Shrines
 
             // Skill Related
+            { "CaptainSupplyDrop, EquipmentRestock", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Captain_CaptainSupplyDrop.EquipmentRestock_prefab, texName = "texResupplyIcon" } },
+            { "VendingMachine", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_VendingMachine.VendingMachine_prefab, texName = "texVendingMachineIcon" } },
+            { "ZiplineVehicle", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Gateway.ZiplineVehicle_prefab, texName = "texTunnelIcon" } }
         };
 
         public void Awake()
@@ -148,21 +151,20 @@ namespace PingIconsOverhaul
         {
             foreach (var keyValuePair in INTERACTABLES)
             {
-                if (keyValuePair.Key != "NullSafeZone")
-                {
-                    TexData texData = keyValuePair.Value;
+                TexData texData = keyValuePair.Value;
 
-                    // Load interactable prefab from the addressable system, skip if it fails
-                    GameObject interactable = LoadInteractable(texData.addressable);
-                    if (interactable == null) continue;
+                // Load interactable prefab from the addressable system, skip if it fails
+                GameObject interactable = LoadInteractable(texData.addressable);
+                if (interactable == null) continue;
 
-                    // Load icon from the asset bundle, skip if it fails
-                    Sprite icon = LoadIcon(texData.addressable, texData.texName);
-                    if (interactable == null) continue;
+                // Load icon from the asset bundle, skip if it fails
+                Sprite icon = LoadIcon(texData.addressable, texData.texName);
+                if (interactable == null) continue;
 
-                    // Override ping icon for the interactable
-                    AddPingIconOverride(interactable, icon);
-                }
+                // Add IDisplayName provider to the interactable
+                AddGenericDisplayNameProvider(interactable, keyValuePair.Key);
+                // Override ping icon for the interactable
+                AddPingIconOverride(interactable, icon);
             }
         }
 
@@ -173,7 +175,7 @@ namespace PingIconsOverhaul
                 GameObject interactable = Addressables.LoadAssetAsync<GameObject>(addressable).WaitForCompletion();
                 if (!interactable)
                 {
-                    Log.Error($"Failed to load interactable {addressable}");
+                    Log.Error($"Failed to load interactable \"{addressable}\"");
                     return null;
                 }
                 return interactable;
@@ -207,6 +209,17 @@ namespace PingIconsOverhaul
             {
                 Log.Error($"Exception while loading icon {texName} from bundle for {addressable}: {ex.Message}");
                 return null;
+            }
+        }
+
+        private static void AddGenericDisplayNameProvider(GameObject interactable, string displayName)
+        {
+            interactable.TryGetComponent(out IDisplayNameProvider displayNameProvider);
+            if (displayNameProvider == null)
+            {
+                Log.Info($"Adding GenericDisplayNameProvider to {interactable.name}, display name: {displayName}");
+                displayNameProvider = interactable.AddComponent<GenericDisplayNameProvider>();
+                ((GenericDisplayNameProvider)displayNameProvider).SetDisplayToken(displayName);
             }
         }
 

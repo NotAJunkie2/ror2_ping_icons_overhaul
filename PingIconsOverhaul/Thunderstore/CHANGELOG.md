@@ -1,3 +1,8 @@
+## 1.2.0
+
+- Added icons for **Skill related** category.
+- Now checking for ```IDisplayNameProvider``` and adding one if needed, to ensure interactables like **Quantum Tunnel** display icons correctly (unfortunately, this doesn't fix the issue with **Log Pickup**).
+
 ## 1.1.0
 
 - Added icons for **Charging Zones** category.
@@ -8,7 +13,8 @@
 - Artifact Pickup now displays correct icon.
 
 ### Dev Tools
-- Pressing ```\``` (Backslash) now logs all tracked InstanceTracker entries to the console, to aid with debugging interactables.
+
+- Pressing ``\`` (Backslash) now logs all tracked InstanceTracker entries to the console, to aid with debugging interactables.
 
 ### Known Issues
 

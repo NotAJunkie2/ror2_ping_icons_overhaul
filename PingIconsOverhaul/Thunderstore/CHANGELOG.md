@@ -1,7 +1,12 @@
+## 1.3.0
+
+- Added icons for **Shrines** category.
+- Feedback welcome! If you have suggestions or thoughts about the shrine icons—or any other icons in the mod—feel free to share them.
+
 ## 1.2.0
 
 - Added icons for **Skill related** category.
-- Now checking for ```IDisplayNameProvider``` and adding one if needed, to ensure interactables like **Quantum Tunnel** display icons correctly (unfortunately, this doesn't fix the issue with **Log Pickup**).
+- Now checking for ``IDisplayNameProvider`` and adding one if needed, to ensure interactables like **Quantum Tunnel** display icons correctly (unfortunately, this doesn't fix the issue with **Log Pickup**).
 
 ## 1.1.0
 

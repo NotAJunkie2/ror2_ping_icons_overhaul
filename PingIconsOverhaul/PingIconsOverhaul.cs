@@ -21,7 +21,7 @@ namespace PingIconsOverhaul
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "NotAJunkie";
         public const string PluginName = "PingIconsOverhaul";
-        public const string PluginVersion = "1.2.0";
+        public const string PluginVersion = "1.3.0";
         private const string bundleName = "pingiconsoverhaul";
         // Class variables
         private static AssetBundle bundle;
@@ -100,6 +100,34 @@ namespace PingIconsOverhaul
             { "Scrapper", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Scrapper.Scrapper_prefab, texName = "texScrapperIcon" } },
 
             // Shrines
+            { "ShrineGoldshoresAccess", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineGoldshoresAccess.ShrineGoldshoresAccess_prefab, texName = "texShrineGoldIcon" } },
+
+            { "ShrineBlood", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineBlood.ShrineBlood_prefab, texName = "texShrineBloodIcon" } },
+            { "ShrineBloodSandy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineBlood_ShrineBloodSandy.Variant_prefab, texName = "texShrineBloodIcon" } },
+            { "ShrineBloodSnowy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineBlood_ShrineBloodSnowy.Variant_prefab, texName = "texShrineBloodIcon" } },
+
+            { "ShrineChance", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineChance.ShrineChance_prefab, texName = "texShrineChanceIcon" } },
+            { "ShrineChanceSandy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineChance_ShrineChanceSandy.Variant_prefab, texName = "texShrineChanceIcon" } },
+            { "ShrineChanceSnowy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineChance_ShrineChanceSnowy.Variant_prefab, texName = "texShrineChanceIcon" } },
+
+            { "ShrineCombat", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineCombat.ShrineCombat_prefab, texName = "texShrineCombatIcon" } },
+            { "ShrineCombatSandy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineCombat_ShrineCombatSandy.Variant_prefab, texName = "texShrineCombatIcon" } },
+            { "ShrineCombatSnowy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineCombat_ShrineCombatSnowy.Variant_prefab, texName = "texShrineCombatIcon" } },
+
+            { "ShrineRestack", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineRestack.ShrineRestack_prefab, texName = "texShrineOrderIcon" } },
+            { "ShrineRestackSandy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineRestack_ShrineRestackSandy.Variant_prefab, texName = "texShrineOrderIcon" } },
+            { "ShrineRestackSnowy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineRestack_ShrineRestackSnowy.Variant_prefab, texName = "texShrineOrderIcon" } },
+
+            { "ShrineBoss", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineBoss.ShrineBoss_prefab, texName = "texShrineMountainIcon" } },
+            { "ShrineBossSandy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineBoss_ShrineBossSandy.Variant_prefab, texName = "texShrineMountainIcon" } },
+            { "ShrineBossSnowy Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineBoss_ShrineBossSnowy.Variant_prefab, texName = "texShrineMountainIcon" } },
+
+            { "ShrineHealing", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineHealing.ShrineHealing_prefab, texName = "texShrineWoodsIcon" } },
+
+            // DLC 2
+            { "ShrineColossusAccess", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC2.ShrineColossusAccess_prefab, texName = "texShrineShapingIcon" } },
+            { "ShrineRebirth", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC2.ShrineRebirth_prefab, texName = "texShrineRebirthIcon" } },
+            { "ShrineHalcyonite", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC2.ShrineHalcyonite_prefab, texName = "texShrineHalcyonIcon" } },
 
             // Skill Related
             { "CaptainSupplyDrop, EquipmentRestock", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Captain_CaptainSupplyDrop.EquipmentRestock_prefab, texName = "texResupplyIcon" } },

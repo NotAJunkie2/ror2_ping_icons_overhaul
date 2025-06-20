@@ -1,3 +1,13 @@
+## 1.3.1
+
+- Forgot to include the DLLs in the previous release — this update makes sure everything is correctly packaged for Thunderstore so the mod actually works.
+- Huge thanks to **SuDmit** from the RoR2 Modding Discord server for pointing it out!
+- Patched README issue - Crashed Multishop icon was not rendering properly
+
+### Known Issues
+
+- Skill issue strikes again. :(
+
 ## 1.3.0
 
 - Added icons for **Shrines** category.

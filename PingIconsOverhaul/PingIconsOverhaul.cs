@@ -5,6 +5,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
+// StreamingAssets\Language\en for translations
+
 namespace PingIconsOverhaul
 {
     struct TexData
@@ -154,8 +156,8 @@ namespace PingIconsOverhaul
             Stage.onStageStartGlobal += (stage) =>
             {
                 Log.Info("Stage started: " + stage.name);
-                OverrideIconsForPurchasablesOnStageStart();
-                OverrideIconsForPickupsOnStageStart();
+                OverrideIconsForObjectsOnStageStart<PurchaseInteraction>();
+                OverrideIconsForObjectsOnStageStart<GenericPickupController>();
             };
 
         }
@@ -271,46 +273,17 @@ namespace PingIconsOverhaul
             }
         }
 
-        private void OverrideIconsForPurchasablesOnStageStart()
+        private static void OverrideIconsForObjectsOnStageStart<T>() where T : MonoBehaviour
         {
-            InstanceTracker.GetInstancesList<PurchaseInteraction>().ForEachTry(purchaseInteraction =>
+            InstanceTracker.GetInstancesList<T>().ForEachTry(interactable =>
             {
-                string name = purchaseInteraction.name.Split('(')[0].Trim();
+                string name = interactable.name.Split('(')[0].Trim();
                 if (INTERACTABLES.TryGetValue(name, out TexData texData))
                 {
-                    purchaseInteraction.TryGetComponent<PingInfoProvider>(out PingInfoProvider pingInfoProvider);
+                    interactable.TryGetComponent<PingInfoProvider>(out PingInfoProvider pingInfoProvider);
                     if (pingInfoProvider == null)
                     {
-                        pingInfoProvider = purchaseInteraction.gameObject.AddComponent<PingInfoProvider>();
-                        pingInfoProvider.pingIconOverride = LoadIcon(texData.addressable, texData.texName);
-                    }
-                    else
-                    {
-                        if (pingInfoProvider.pingIconOverride.name != texData.texName)
-                        {
-                            Log.Info($"Overriding ping icon for {name} with {texData.texName}");
-                            pingInfoProvider.pingIconOverride = LoadIcon(texData.addressable, texData.texName);
-                        }
-                    }
-                }
-                else
-                {
-                    Log.Warning($"No icon found for {name}");
-                }
-            });
-        }
-
-        private void OverrideIconsForPickupsOnStageStart()
-        {
-            InstanceTracker.GetInstancesList<GenericPickupController>().ForEachTry(pickupInteraction =>
-            {
-                string name = pickupInteraction.name.Split('(')[0].Trim();
-                if (INTERACTABLES.TryGetValue(name, out TexData texData))
-                {
-                    pickupInteraction.TryGetComponent<PingInfoProvider>(out PingInfoProvider pingInfoProvider);
-                    if (pingInfoProvider == null)
-                    {
-                        pingInfoProvider = pickupInteraction.gameObject.AddComponent<PingInfoProvider>();
+                        pingInfoProvider = interactable.gameObject.AddComponent<PingInfoProvider>();
                         pingInfoProvider.pingIconOverride = LoadIcon(texData.addressable, texData.texName);
                     }
                     else

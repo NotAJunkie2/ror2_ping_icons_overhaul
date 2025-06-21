@@ -10,6 +10,7 @@
 
 - [Ping Icons Overhaul](#ping-icons-overhaul)
   - [Table of Contents](#table-of-contents)
+  - [Development Tools](#development-tools)
   - [Credits \& Thanks](#credits--thanks)
     - [Mod Development \& Guidance](#mod-development--guidance)
     - [Bug Reports \& Suggestions](#bug-reports--suggestions)
@@ -28,6 +29,15 @@
     - [Shrines](#shrines)
     - [Skill related](#skill-related)
   - [Support](#support)
+
+---
+
+## Development Tools
+
+- **Code editor**: VS Code
+- **Mod compilation**: Visual Studio Community
+- **Asset bundle creation**: Unity
+- **Icon design**: Affinity Designer 2
 
 ---
 

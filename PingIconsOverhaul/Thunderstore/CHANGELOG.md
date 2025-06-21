@@ -1,8 +1,28 @@
+## 1.3.2
+
+This smaller patch focuses on structural code improvements, enhanced code modularity and some minor adjustments to facilitate ongoing mod development.
+
+- Replaced multiple ``OverrideIconsFor...OnStageStart()`` methods with a generic templated method ``OverridePingIconsForObjects<T>()``.
+- Added dedicated method ``OverridePingIconsForTeleporters()`` to handle teleporters and ``TeleporterInteraction`` separetely, as they require different management than other interactables.
+- Reduced code nesting for improved readability.
+- Refactored several methods to increase modularity.
+- Renamed some methods and variables to maintain consistent naming conventions.
+
+### Docs
+- Introduced **Table of Contents** in the README.
+- Introduced **Development Tools** section.
+- Introduced **Credits & Thanks** section.
+- Added collapsable menus for tables with more than 2 items to improve README readability.
+
+### Bug Fixes
+
+- Teleporter and Lunar Teleporter now display correct icons, thanks to the new ``OverridePingIconsForTeleporters()`` method.
+
 ## 1.3.1
 
 - Forgot to include the DLLs in the previous release — this update makes sure everything is correctly packaged for Thunderstore so the mod actually works.
 - Huge thanks to **SuDmit** from the RoR2 Modding Discord server for pointing it out!
-- Patched README issue - Crashed Multishop icon was not rendering properly
+- Patched README issue - Crashed Multishop icon was not rendering properly.
 
 ### Known Issues
 

@@ -23,11 +23,11 @@ namespace PingIconsOverhaul
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "NotAJunkie";
         public const string PluginName = "PingIconsOverhaul";
-        public const string PluginVersion = "1.3.1";
+        public const string PluginVersion = "1.3.2";
         private const string bundleName = "pingiconsoverhaul";
         // Class variables
         private static AssetBundle bundle;
-        private static readonly Dictionary<string, TexData> INTERACTABLES = new Dictionary<string, TexData>
+        private static readonly Dictionary<string, TexData> INTERACTABLES = new()
         {
             // 3D Printers
             { "ShrineCleanse", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_ShrineCleanse.ShrineCleanse_prefab, texName = "texCleansingPoolIcon"} },
@@ -43,9 +43,9 @@ namespace PingIconsOverhaul
             { "VoidCoinBarrel", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC1_VoidCoinBarrel.VoidCoinBarrel_prefab, texName = "texVoidStalkIcon" } },
 
             // Charging zones
-            { "Teleporter", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Teleporters.TeleporterChargingPositionIndicator_prefab, texName = "texTeleporterIcon" } },
             // FIX with RoR2/Base/Teleporters/TeleporterChargingPositionIndicator.prefab
-            // { "LunarTeleporter Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Teleporters.TeleporterChargingPositionIndicator_prefab, texName = "texMoonTeleporterIcon" } }, // FIX
+            { "Teleporter1", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Teleporters.Teleporter1_prefab, texName = "texTeleporterIcon" } },
+            { "LunarTeleporter Variant", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Teleporters_LunarTeleporter.Variant_prefab, texName = "texMoonTeleporterIcon" } },
             { "LunarTeleporterProngs", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Teleporters.LunarTeleporterProngs_prefab, texName = "texMoonTeleporterIcon" } },
 
             { "MoonBatteryBlood", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_moon2.MoonBatteryBlood_prefab, texName = "texPillarBloodIcon" } },
@@ -88,7 +88,6 @@ namespace PingIconsOverhaul
 
             // Environment Specific
             { "SetpiecePickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Common.SetpiecePickup_prefab, texName = "texArtifactPickupIcon"} },
-
 
             // Pickups
             { "CommandCube", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Command.CommandCube_prefab, texName = "texCommandEssenceIcon" } },
@@ -139,8 +138,7 @@ namespace PingIconsOverhaul
 
         public void Awake()
         {
-            // Intiialize the logger
-            Log.Init(Logger);
+            Log.Init(Logger); // Intiialize the logger
         }
 
         public void Start()
@@ -150,14 +148,15 @@ namespace PingIconsOverhaul
             // Load the asset bundle from the plugin's directory
             bundle = AssetBundle.LoadFromFile(System.IO.Path.Combine(System.IO.Path.GetDirectoryName(Info.Location), bundleName));
 
-            // Set icons for interactables
-            SetIconsForInteractables();
+            SetPingIconsForInteractables(); // Set icons for interactables
 
+            // Override icons for interactables on stage start (necessary for such objects as Legendary Chests in Abyssal Depths, Moon Pillars, etc...)
             Stage.onStageStartGlobal += (stage) =>
             {
                 Log.Info("Stage started: " + stage.name);
-                OverrideIconsForObjectsOnStageStart<PurchaseInteraction>();
-                OverrideIconsForObjectsOnStageStart<GenericPickupController>();
+                OverridePingIconsForObjects<PurchaseInteraction>();
+                OverridePingIconsForObjects<GenericPickupController>();
+                OverridePingIconsForTeleporters();
             };
 
         }
@@ -177,129 +176,156 @@ namespace PingIconsOverhaul
             }
         }
 
-        private void SetIconsForInteractables()
+        private void SetPingIconsForInteractables()
         {
             foreach (var keyValuePair in INTERACTABLES)
             {
-                TexData texData = keyValuePair.Value;
+                if (string.IsNullOrEmpty(keyValuePair.Value.addressable))
+                {
+                    Log.Warning($"Skipping {keyValuePair.Key} due to missing addressable.");
+                    continue;
+                }
+
+                TexData td = keyValuePair.Value;
 
                 // Load interactable prefab from the addressable system, skip if it fails
-                GameObject interactable = LoadInteractable(texData.addressable);
-                if (interactable == null) continue;
+                if (!LoadInteractable(td.addressable, out GameObject interactable)) continue;
 
                 // Load icon from the asset bundle, skip if it fails
-                Sprite icon = LoadIcon(texData.addressable, texData.texName);
-                if (interactable == null) continue;
+                if (!LoadPingIcon(td.addressable, td.texName, out Sprite pingIcon)) continue;
 
                 // Add IDisplayName provider to the interactable
-                AddGenericDisplayNameProvider(interactable, keyValuePair.Key);
+                if (!keyValuePair.Key.Contains("Prongs")) // Ignore prongs as they default to "Primordial Teleporter"
+                {
+                    AddGenericDisplayNameProvider(interactable, keyValuePair.Key);
+                }
+
                 // Override ping icon for the interactable
-                AddPingIconOverride(interactable, icon);
+                AddPingIconOverride(interactable, pingIcon);
             }
         }
 
-        private static GameObject LoadInteractable(string addressable)
+        private static bool LoadInteractable(string addressable, out GameObject interactable)
         {
-            try
+            interactable = Addressables.LoadAssetAsync<GameObject>(addressable).WaitForCompletion();
+            if (interactable == null)
             {
-                GameObject interactable = Addressables.LoadAssetAsync<GameObject>(addressable).WaitForCompletion();
-                if (!interactable)
-                {
-                    Log.Error($"Failed to load interactable \"{addressable}\"");
-                    return null;
-                }
-                return interactable;
+                Log.Error($"Failed to load interactable \"{addressable}\"");
             }
-            catch (System.Exception ex)
-            {
-                Log.Error($"Exception while loading interactable {addressable}: {ex.Message}");
-                return null;
-            }
+            return interactable != null;
         }
 
-        private static Sprite LoadIcon(string addressable, string texName)
+        private static bool LoadPingIcon(string addressable, string texName, out Sprite pingIcon)
         {
-            try
+            if (bundle == null)
             {
-                if (bundle == null)
-                {
-                    Log.Error("Asset bundle is not loaded.");
-                    return null;
-                }
+                Log.Error("Failed to load Asset bundle.");
+                pingIcon = null;
+                return false;
+            }
 
-                Sprite icon = bundle.LoadAsset<Sprite>(texName);
-                if (icon == null)
-                {
-                    Log.Error($"Failed to load icon {texName} from bundle for {addressable}");
-                    return null;
-                }
-                return icon;
-            }
-            catch (System.Exception ex)
+            pingIcon = bundle.LoadAsset<Sprite>(texName);
+            if (pingIcon == null)
             {
-                Log.Error($"Exception while loading icon {texName} from bundle for {addressable}: {ex.Message}");
-                return null;
+                Log.Error($"Failed to load ping icon \"{texName}\" from bundle for \"{addressable}\"");
             }
+
+            return pingIcon != null;
         }
 
         private static void AddGenericDisplayNameProvider(GameObject interactable, string displayName)
         {
-            interactable.TryGetComponent(out IDisplayNameProvider displayNameProvider);
-            if (displayNameProvider == null)
-            {
-                Log.Info($"Adding GenericDisplayNameProvider to {interactable.name}, display name: {displayName}");
-                displayNameProvider = interactable.AddComponent<GenericDisplayNameProvider>();
-                ((GenericDisplayNameProvider)displayNameProvider).SetDisplayToken(displayName);
-            }
+            if (interactable.TryGetComponent(out IDisplayNameProvider _)) return;
+
+            Log.Info($"Adding GenericDisplayNameProvider to {interactable.name}, display name: {displayName}");
+            var displayNameProvider = interactable.AddComponent<GenericDisplayNameProvider>();
+            displayNameProvider.SetDisplayToken(displayName);
         }
 
         private void AddPingIconOverride(GameObject interactable, Sprite sprite)
         {
-            try
+            if (!interactable.TryGetComponent(out PingInfoProvider pingProvider))
             {
-                interactable.TryGetComponent<PingInfoProvider>(out PingInfoProvider pingProvider);
-
-                if (pingProvider == null)
-                {
-                    pingProvider = interactable.AddComponent<PingInfoProvider>();
-                }
-
-                pingProvider.pingIconOverride = sprite;
-                Log.Info($"Successfully added ping icon override for {interactable.name} with icon {sprite.name}");
+                pingProvider = interactable.AddComponent<PingInfoProvider>();
             }
-            catch (System.Exception ex)
-            {
-                Log.Error($"Failed to add ping icon override for {interactable.name}: {ex.Message}");
-            }
+
+            pingProvider.pingIconOverride = sprite;
+            Log.Info($"Successfully added ping icon override for {interactable.name} with {sprite.name}");
         }
 
-        private static void OverrideIconsForObjectsOnStageStart<T>() where T : MonoBehaviour
+        private static void OverridePingIconsForObjects<T>() where T : MonoBehaviour
         {
             InstanceTracker.GetInstancesList<T>().ForEachTry(interactable =>
             {
                 string name = interactable.name.Split('(')[0].Trim();
-                if (INTERACTABLES.TryGetValue(name, out TexData texData))
+                if (!INTERACTABLES.TryGetValue(name, out TexData texData))
                 {
-                    interactable.TryGetComponent<PingInfoProvider>(out PingInfoProvider pingInfoProvider);
-                    if (pingInfoProvider == null)
-                    {
-                        pingInfoProvider = interactable.gameObject.AddComponent<PingInfoProvider>();
-                        pingInfoProvider.pingIconOverride = LoadIcon(texData.addressable, texData.texName);
-                    }
-                    else
-                    {
-                        if (pingInfoProvider.pingIconOverride.name != texData.texName)
-                        {
-                            Log.Info($"Overriding ping icon for {name} with {texData.texName}");
-                            pingInfoProvider.pingIconOverride = LoadIcon(texData.addressable, texData.texName);
-                        }
-                    }
+                    Log.Warning($"No ping icon is available for {name} in asset dictionary");
+                    return;
                 }
-                else
+
+                if (!interactable.TryGetComponent(out PingInfoProvider pingInfoProvider))
                 {
-                    Log.Warning($"No icon found for {name}");
+                    pingInfoProvider = interactable.gameObject.AddComponent<PingInfoProvider>();
+                }
+
+                if (pingInfoProvider.pingIconOverride.name != texData.texName)
+                {
+                    Log.Info($"Overriding ping icon for {name} with {texData.texName}");
+                    if (!LoadPingIcon(texData.addressable, texData.texName, out Sprite pingIcon)) return;
+
+                    pingInfoProvider.pingIconOverride = pingIcon;
                 }
             });
+        }
+
+        private static void OverridePingIconsForTeleporters()
+        {
+            var teleporters = InstanceTracker.GetInstancesList<TeleporterInteraction>();
+            if (teleporters.Count == 0)
+            {
+                Log.Warning("No TeleporterInteraction instances found.");
+                return;
+            }
+
+            Log.Info($"Found {teleporters.Count} TeleporterInteraction instances.");
+            teleporters.ForEachTry(teleporter =>
+            {
+                if (teleporter == null)
+                {
+                    Log.Warning("Found a null TeleporterInteraction instance.");
+                    return;
+                }
+
+                ReplaceTeleporterPingIcon(teleporter);
+            });
+        }
+
+        private static void ReplaceTeleporterPingIcon(TeleporterInteraction teleporter)
+        {
+            string name = teleporter.name.Split('(')[0].Trim();
+
+            if (!INTERACTABLES.TryGetValue(name, out _))
+            {
+                Log.Warning($"No ping icon found for teleporter: {name}");
+                return;
+            }
+
+            Log.Info($"Replacing icon for teleporter: {name}");
+            PositionIndicator posIndicator = teleporter.teleporterPositionIndicator;
+            if (posIndicator?.alwaysVisibleObject.TryGetComponent(out SpriteRenderer sr) != true)
+            {
+                Log.Warning("No SpriteRenderer found on alwaysVisibleObject.");
+                return;
+            }
+
+            if (!teleporter.TryGetComponent(out PingInfoProvider pingInfo))
+            {
+                Log.Warning("No PingInfoProvider found on the teleporter.");
+                return;
+            }
+
+            sr.sprite = pingInfo.pingIconOverride;
         }
     }
 }

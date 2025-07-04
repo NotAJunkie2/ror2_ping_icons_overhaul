@@ -1,0 +1,52 @@
+[config]
+schemaVersion = "0.0.1"
+
+[general]
+repository = "https://thunderstore.io"
+
+[package]
+namespace = "NotAJunkie"
+name = "PingIconsOverhaul"
+description = "A Risk of Rain 2 mod that replaces the default ping icons with custom ones, making them more visually appealing and easier to understand."
+websiteUrl = "https://github.com/NotAJunkie2/ror2_ping_icons_overhaul"
+containsNsfwContent = false
+
+[package.dependencies]
+BepInEx-BepInExPack = "5.4.2403"
+
+[build]
+icon = "../../icon.png"
+readme = "../../README.md"
+outdir = "../../artifacts/thunderstore/"
+
+[[build.copy]]
+source = "./pingiconsoverhaul"
+target = "plugins/PingIconsOverhaul/"
+
+[[build.copy]]
+source = "../../artifacts/bin/PingIconsOverhaul/release/PingIconsOverhaul.dll"
+target = "plugins/PingIconsOverhaul/"
+
+[[build.copy]]
+source = "../../artifacts/bin/PingIconsOverhaul/release/PingIconsOverhaul.pdb"
+target = "plugins/PingIconsOverhaul/"
+
+[[build.copy]]
+source = "../../CHANGELOG.md"
+target = "/"
+
+[[build.copy]]
+source = "../../LICENSE"
+target = "/"
+
+# The following config options only apply when using TCLI to publish to Thunderstore directly:
+
+[publish]
+# See communities at:
+# https://thunderstore.io/api/experimental/community/
+communities = [ "riskofrain2", ]
+
+[publish.categories]
+# See categories at:
+# https://thunderstore.io/api/experimental/community/riskofrain2/category/
+riskofrain2 = [ "mods", "tweaks", "client-side" ]

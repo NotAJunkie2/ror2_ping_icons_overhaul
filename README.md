@@ -14,7 +14,6 @@
   - [Credits \& Thanks](#credits--thanks)
     - [Mod Development \& Guidance](#mod-development--guidance)
     - [Bug Reports \& Suggestions](#bug-reports--suggestions)
-  - [Changelog](#changelog)
   - [Suggestions \& Requests](#suggestions--requests)
   - [Featured Icons](#featured-icons)
     - [Barrels](#barrels)
@@ -50,12 +49,6 @@
 ### Bug Reports & Suggestions
 
 - **WolfoIsBestWolf**, **SuDmit**
-
----
-
-## Changelog
-
-See the full changelog [here](./PingIconsOverhaul/Thunderstore/CHANGELOG.md).
 
 ---
 
@@ -147,15 +140,15 @@ Your feedback helps to make this mod better!
 
 | Interactable             | Icon          |
 | ------------------------ | ------------- |
-| Broken Combat Drone      | **WIP** |
-| Broken Emergency Drone   | **WIP** |
-| Broken Equipment Drone   | **WIP** |
-| Broken Healing Drone     | **WIP** |
-| Broken Incinerator Drone | **WIP** |
-| Broken Missile Drone     | **WIP** |
-| Broken Turret            | **WIP** |
-| Lemurian Egg             | **WIP** |
-| TC-280                   | **WIP** |
+| Broken Combat Drone      | ![texCombatDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texCombatDroneIcon.png "Combat Drone") |
+| Broken Emergency Drone   | ![texEmergencyDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texEmergencyDroneIcon.png "Emergency Drone") |
+| Broken Equipment Drone   | ![texEquipmentDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texEquipmentDroneIcon.png "Equipment Drone") |
+| Broken Healing Drone     | ![texHealingDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texHealingDroneIcon.png "Healing Drone") |
+| Broken Incinerator Drone | ![texIncineratorDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texIncineratorDroneIcon.png "Incinerator Drone") |
+| Broken Missile Drone     | ![texMissileDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texMissileDroneIcon.png "Missile Drone") |
+| Broken Turret            | ![texTurretDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texTurretDroneIcon.png "Turret") |
+| Lemurian Egg             | ![texLemurianDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texLemurianDroneIcon.png "Lemurian Egg") |
+| TC-280                   | ![texTC280DroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texTC280DroneIcon.png "TC-280 Drone") |
 
 </details>
 
@@ -166,7 +159,7 @@ Your feedback helps to make this mod better!
 
 | Interactable               |                                                                                  Icon                                                                                  |
 | :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| Artifact Pickup            | ![texArtifactPickup](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/environment_specific/texArtifactPickup.png "Artifact Pickup") |
+| Artifact Pickup            | ![texArtifactPickupIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/environment_specific/texArtifactPickupIcon.png "Artifact Pickup") |
 | Alloy Vulture Nest         |                                                                             **WIP**                                                                             |
 | Aurelionite Geode          |                                                                             **WIP**                                                                             |
 | Broken REX                 |                                                                             **WIP**                                                                             |

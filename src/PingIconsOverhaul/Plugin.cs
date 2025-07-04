@@ -6,7 +6,6 @@ using UnityEngine;
 using UnityEngine.AddressableAssets;
 
 // StreamingAssets\Language\en for translations
-
 namespace PingIconsOverhaul
 {
     struct TexData
@@ -26,7 +25,7 @@ namespace PingIconsOverhaul
         public const string PluginVersion = "1.3.2";
         private const string bundleName = "pingiconsoverhaul";
         // Class variables
-        private static AssetBundle bundle;
+        private static AssetBundle? bundle;
         private static readonly Dictionary<string, TexData> INTERACTABLES = new()
         {
             // 3D Printers
@@ -158,7 +157,6 @@ namespace PingIconsOverhaul
                 OverridePingIconsForObjects<GenericPickupController>();
                 OverridePingIconsForTeleporters();
             };
-
         }
 
         private void Update()
@@ -192,7 +190,7 @@ namespace PingIconsOverhaul
                 if (!LoadInteractable(td.addressable, out GameObject interactable)) continue;
 
                 // Load icon from the asset bundle, skip if it fails
-                if (!LoadPingIcon(td.addressable, td.texName, out Sprite pingIcon)) continue;
+                if (!LoadPingIcon(td.addressable, td.texName, out Sprite? pingIcon)) continue;
 
                 // Add IDisplayName provider to the interactable
                 if (!keyValuePair.Key.Contains("Prongs")) // Ignore prongs as they default to "Primordial Teleporter"
@@ -201,7 +199,7 @@ namespace PingIconsOverhaul
                 }
 
                 // Override ping icon for the interactable
-                AddPingIconOverride(interactable, pingIcon);
+                AddPingIconOverride(interactable, pingIcon!);
             }
         }
 
@@ -215,7 +213,7 @@ namespace PingIconsOverhaul
             return interactable != null;
         }
 
-        private static bool LoadPingIcon(string addressable, string texName, out Sprite pingIcon)
+        private static bool LoadPingIcon(string addressable, string texName, out Sprite? pingIcon)
         {
             if (bundle == null)
             {
@@ -272,7 +270,7 @@ namespace PingIconsOverhaul
                 if (pingInfoProvider.pingIconOverride.name != texData.texName)
                 {
                     Log.Info($"Overriding ping icon for {name} with {texData.texName}");
-                    if (!LoadPingIcon(texData.addressable, texData.texName, out Sprite pingIcon)) return;
+                    if (!LoadPingIcon(texData.addressable, texData.texName, out Sprite? pingIcon)) return;
 
                     pingInfoProvider.pingIconOverride = pingIcon;
                 }

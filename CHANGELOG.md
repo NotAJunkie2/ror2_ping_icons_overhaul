@@ -9,6 +9,7 @@ This smaller patch focuses on structural code improvements, enhanced code modula
 - Renamed some methods and variables to maintain consistent naming conventions.
 
 ### Docs
+
 - Introduced **Table of Contents** in the README.
 - Introduced **Development Tools** section.
 - Introduced **Credits & Thanks** section.

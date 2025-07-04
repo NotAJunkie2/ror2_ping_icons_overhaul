@@ -1,0 +1,16 @@
+<Project>
+
+  <PropertyGroup>
+    <!-- Set if the default steam game install directory doesn't work. -->
+    <!-- <RiskofRain2GameRootDir></RiskofRain2GameRootDir> -->
+    <!-- Set if your BepInEx/plugins/ directory isn't in the game files. -->
+    <!-- <RiskofRain2PluginsDir></RiskofRain2PluginsDir> -->
+  </PropertyGroup>
+
+  <Target Name="DeployFiles" AfterTargets="Build">
+    <Message Text="Deploy → $(RiskofRain2PluginsDir)$(AssemblyName).dll" Importance="High" />
+    <Error Text="Plugins directory '$(RiskofRain2PluginsDir)' doesn't exist!" Condition="!Exists('$(RiskofRain2PluginsDir)')" />
+    <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(RiskofRain2PluginsDir)" />
+  </Target>
+
+</Project>

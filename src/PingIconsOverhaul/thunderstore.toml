@@ -12,7 +12,7 @@ websiteUrl = "https://github.com/NotAJunkie2/ror2_ping_icons_overhaul"
 containsNsfwContent = false
 
 [package.dependencies]
-BepInEx-BepInExPack = "5.4.2403"
+bbepis-BepInExPack = "5.4.2120"
 
 [build]
 icon = "../../icon.png"

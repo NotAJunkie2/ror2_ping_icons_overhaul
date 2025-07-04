@@ -1,3 +1,21 @@
+## 1.4.0
+
+- Added icons for **Drones** category.
+- Tweaked icons for
+  - **3D Printer**
+  - **Cleansing Pool**
+  - **Category Chests**
+  - **Adaptive Chest**
+  - **Crashed Delivery**
+  - **Equipment Barrel**
+  - **Legendary Chest**
+  - **Lunar Pod**
+  - **Multishop Terminal**
+  - **Equipment Triple Shop**
+  - **Scrapper**
+- Migrated project to a ``BepInExTemplate`` to simplify mod development.
+
+---
 ## 1.3.2
 
 This smaller patch focuses on structural code improvements, enhanced code modularity and some minor adjustments to facilitate ongoing mod development.
@@ -19,6 +37,7 @@ This smaller patch focuses on structural code improvements, enhanced code modula
 
 - Teleporter and Lunar Teleporter now display correct icons, thanks to the new ``OverridePingIconsForTeleporters()`` method.
 
+---
 ## 1.3.1
 
 - Forgot to include the DLLs in the previous release — this update makes sure everything is correctly packaged for Thunderstore so the mod actually works.
@@ -29,16 +48,19 @@ This smaller patch focuses on structural code improvements, enhanced code modula
 
 - Skill issue strikes again. :(
 
+---
 ## 1.3.0
 
 - Added icons for **Shrines** category.
 - Feedback welcome! If you have suggestions or thoughts about the shrine icons—or any other icons in the mod—feel free to share them.
 
+---
 ## 1.2.0
 
 - Added icons for **Skill related** category.
 - Now checking for ``IDisplayNameProvider`` and adding one if needed, to ensure interactables like **Quantum Tunnel** display icons correctly (unfortunately, this doesn't fix the issue with **Log Pickup**).
 
+---
 ## 1.1.0
 
 - Added icons for **Charging Zones** category.
@@ -57,11 +79,13 @@ This smaller patch focuses on structural code improvements, enhanced code modula
 - **Teleporter** (normal and primordial) icon is not displayed - currently investigating correct implementation.
 - **Log Pickup** is still not displaying the correct icon.
 
+---
 ## 1.0.2
 
 - README updated for Thunderstore, hopefully for sure.
 - Moved icon initialization to ``Start`` method.
 
+---
 ## 1.0.1
 
 - Bumped up to 1.0.1 because I messed up the manifest when uploading it to Thunderstore 💀.
@@ -72,6 +96,7 @@ This smaller patch focuses on structural code improvements, enhanced code modula
 
 - Skill issue.
 
+---
 ## 0.4.1
 
 - Replaced hard-coded addressable strings with constants from ``RoR2BepInExPack.GameAssetPaths``.
@@ -84,19 +109,24 @@ This smaller patch focuses on structural code improvements, enhanced code modula
 
 - Artifact pickups do not display their ping icons yet.
 
+---
 ## 0.4.0
 
 - Added icons for **Chests** category.
 
+---
 ## 0.3.0
 
 - Added icons for **3D Printers** and **Scrapper** categories.
 
+---
 ## 0.2.0
 
 - Added icons for **Pickups** category.
 - Added **Artifact Pickup** icon.
 
+---
 ## 0.1.0
 
 - Added icons for **Barrel** category.
+---

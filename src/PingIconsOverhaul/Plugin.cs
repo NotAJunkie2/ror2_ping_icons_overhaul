@@ -22,7 +22,7 @@ namespace PingIconsOverhaul
         public const string PluginGUID = PluginAuthor + "." + PluginName;
         public const string PluginAuthor = "NotAJunkie";
         public const string PluginName = "PingIconsOverhaul";
-        public const string PluginVersion = "1.3.2";
+        public const string PluginVersion = "1.4.0";
         private const string bundleName = "pingiconsoverhaul";
         // Class variables
         private static AssetBundle? bundle;
@@ -84,6 +84,15 @@ namespace PingIconsOverhaul
             { "FragmentPotentialPickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_DLC2.FragmentPotentialPickup_prefab, texName = "texAurelioniteFragmentIcon"} },
 
             // Drones
+            { "Drone1Broken", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Drones.Drone1Broken_prefab, texName = "texCombatDroneIcon" } },
+            { "EmergencyDroneBroken", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Drones.EmergencyDroneBroken_prefab, texName = "texEmergencyDroneIcon" } },
+            { "EquipmentDroneBroken", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Drones.EquipmentDroneBroken_prefab, texName = "texEquipmentDroneIcon" } },
+            { "Drone2Broken", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Drones.Drone2Broken_prefab, texName = "texHealingDroneIcon" } },
+            { "FlameDroneBroken", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Drones.FlameDroneBroken_prefab, texName = "texIncineratorDroneIcon" } },
+            { "LemurianEgg", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_CU8_LemurianEgg.LemurianEgg_prefab, texName = "texLemurianDroneIcon" } },
+            { "MissileDroneBroken", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Drones.MissileDroneBroken_prefab, texName = "texMissileDroneIcon" } },
+            { "MegaDroneBroken", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Drones.MegaDroneBroken_prefab, texName = "texTC280DroneIcon" } },
+            { "Turret1Broken", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Drones.Turret1Broken_prefab, texName = "texTurretDroneIcon" } },
 
             // Environment Specific
             { "SetpiecePickup", new TexData { addressable = RoR2BepInExPack.GameAssetPaths.RoR2_Base_Common.SetpiecePickup_prefab, texName = "texArtifactPickupIcon"} },

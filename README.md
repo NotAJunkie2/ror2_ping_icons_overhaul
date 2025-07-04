@@ -1,6 +1,6 @@
 # Ping Icons Overhaul
 
-![Ping Icons Overhaul Logo](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/PingIconsOverhaul/Thunderstore/icon.png)
+![Ping Icons Overhaul Logo](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/icon.png)
 
 **Ping Icons Overhaul** is a mod for **Risk of Rain 2** that replaces the default ping icons with clean, stylized versions — making pings easier to recognize at a glance.
 
@@ -138,17 +138,17 @@ Your feedback helps to make this mod better!
 <details>
 <summary>Expand</summary>
 
-| Interactable             | Icon          |
-| ------------------------ | ------------- |
-| Broken Combat Drone      | ![texCombatDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texCombatDroneIcon.png "Combat Drone") |
-| Broken Emergency Drone   | ![texEmergencyDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texEmergencyDroneIcon.png "Emergency Drone") |
-| Broken Equipment Drone   | ![texEquipmentDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texEquipmentDroneIcon.png "Equipment Drone") |
-| Broken Healing Drone     | ![texHealingDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texHealingDroneIcon.png "Healing Drone") |
+| Interactable             | Icon                                                                                                                                                                   |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Broken Combat Drone      | ![texCombatDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texCombatDroneIcon.png "Combat Drone")                |
+| Broken Emergency Drone   | ![texEmergencyDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texEmergencyDroneIcon.png "Emergency Drone")       |
+| Broken Equipment Drone   | ![texEquipmentDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texEquipmentDroneIcon.png "Equipment Drone")       |
+| Broken Healing Drone     | ![texHealingDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texHealingDroneIcon.png "Healing Drone")             |
 | Broken Incinerator Drone | ![texIncineratorDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texIncineratorDroneIcon.png "Incinerator Drone") |
-| Broken Missile Drone     | ![texMissileDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texMissileDroneIcon.png "Missile Drone") |
-| Broken Turret            | ![texTurretDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texTurretDroneIcon.png "Turret") |
-| Lemurian Egg             | ![texLemurianDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texLemurianDroneIcon.png "Lemurian Egg") |
-| TC-280                   | ![texTC280DroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texTC280DroneIcon.png "TC-280 Drone") |
+| Broken Missile Drone     | ![texMissileDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texMissileDroneIcon.png "Missile Drone")             |
+| Broken Turret            | ![texTurretDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texTurretDroneIcon.png "Turret")                      |
+| Lemurian Egg             | ![texLemurianDroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texLemurianDroneIcon.png "Lemurian Egg")            |
+| TC-280                   | ![texTC280DroneIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/drones/texTC280DroneIcon.png "TC-280 Drone")                  |
 
 </details>
 
@@ -157,29 +157,29 @@ Your feedback helps to make this mod better!
 <details>
 <summary>Expand</summary>
 
-| Interactable               |                                                                                  Icon                                                                                  |
-| :------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| Interactable               |                                                                                      Icon                                                                                      |
+| :------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | Artifact Pickup            | ![texArtifactPickupIcon](https://raw.githubusercontent.com/NotAJunkie2/ror2_ping_icons_overhaul/main/image/README/environment_specific/texArtifactPickupIcon.png "Artifact Pickup") |
-| Alloy Vulture Nest         |                                                                             **WIP**                                                                             |
-| Aurelionite Geode          |                                                                             **WIP**                                                                             |
-| Broken REX                 |                                                                             **WIP**                                                                             |
-| Cauldron                   |                                                                             **WIP**                                                                             |
-| Chef's Wok                 |                                                                             **WIP**                                                                             |
-| Compound Generator         |                                                                             **WIP**                                                                             |
-| Fan                        |                                                                             **WIP**                                                                             |
-| Glass Frog                 |                                                                             **WIP**                                                                             |
-| Halcyon Beacon             |                                                                             **WIP**                                                                             |
-| Laptop                     |                                                                             **WIP**                                                                             |
-| Lunar Bud                  |                                                                             **WIP**                                                                             |
-| Lunar Seer                 |                                                                             **WIP**                                                                             |
-| Newt Altar                 |                                                                             **WIP**                                                                             |
-| Obelisk                    |                                                                             **WIP**                                                                             |
-| Pressure Plate             |                                                                             **WIP**                                                                             |
-| Radio Scanner              |                                                                             **WIP**                                                                             |
-| Slab                       |                                                                             **WIP**                                                                             |
-| Survivor Pod               |                                                                             **WIP**                                                                             |
-| Survivor Suspended In Time |                                                                             **WIP**                                                                             |
-| Timed Chest                |                                                                             **WIP**                                                                             |
+| Alloy Vulture Nest         |                                                                                 **WIP**                                                                                 |
+| Aurelionite Geode          |                                                                                 **WIP**                                                                                 |
+| Broken REX                 |                                                                                 **WIP**                                                                                 |
+| Cauldron                   |                                                                                 **WIP**                                                                                 |
+| Chef's Wok                 |                                                                                 **WIP**                                                                                 |
+| Compound Generator         |                                                                                 **WIP**                                                                                 |
+| Fan                        |                                                                                 **WIP**                                                                                 |
+| Glass Frog                 |                                                                                 **WIP**                                                                                 |
+| Halcyon Beacon             |                                                                                 **WIP**                                                                                 |
+| Laptop                     |                                                                                 **WIP**                                                                                 |
+| Lunar Bud                  |                                                                                 **WIP**                                                                                 |
+| Lunar Seer                 |                                                                                 **WIP**                                                                                 |
+| Newt Altar                 |                                                                                 **WIP**                                                                                 |
+| Obelisk                    |                                                                                 **WIP**                                                                                 |
+| Pressure Plate             |                                                                                 **WIP**                                                                                 |
+| Radio Scanner              |                                                                                 **WIP**                                                                                 |
+| Slab                       |                                                                                 **WIP**                                                                                 |
+| Survivor Pod               |                                                                                 **WIP**                                                                                 |
+| Survivor Suspended In Time |                                                                                 **WIP**                                                                                 |
+| Timed Chest                |                                                                                 **WIP**                                                                                 |
 
 </details>
 
